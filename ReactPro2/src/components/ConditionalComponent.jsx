@@ -1,0 +1,13 @@
+
+
+export default function ConditionalComponent(){
+    let messageOne = <h1>This is a message 1</h1>
+    let messageTwo = <h1>This is a message 2</h1>
+    const display = true;
+
+    if(display){
+        return messageOne;
+    }else{
+        return messageTwo;
+    }
+}
