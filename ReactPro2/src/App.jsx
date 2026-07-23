@@ -5,7 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import ConditionalComponent from './components/ConditionalComponent'
 import Messages from './components/Messages'
-
+import Form from './components/Form'
 import Count from './components/Count'
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +14,8 @@ function App() {
     <>
     {/* <ConditionalComponent/> */}
       {/* <Messages /> */}
-      <Count/>
+      {/* <Count/> */}
+      <Form/>
     </>
   )
 }
