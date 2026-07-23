@@ -1,7 +1,12 @@
 export default function Form(){
+    function handleChange(){
+        console.log("Change occured")
+    }
+    return(
     <>
     <form>
-        <input type="text"  value = "firstname" />
+        <input onChange={handleChange}  type="text"  value = "firstname" />
     </form>
     </>
+    )
 }
