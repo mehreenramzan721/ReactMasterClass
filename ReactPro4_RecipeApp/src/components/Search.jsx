@@ -2,13 +2,16 @@ import {useState, useEffect} from 'react'
 
 export default function Search(){
     const [query, setQuery] = useState("pizza")
-    const URL = "www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata"
+    const URL = "https://api.spoonacular.com/recipes/complexSearch";
+    const API_KEY = "c0a25e671f454fad9dc29276cdc1189d";
 
 
     useEffect(()=>{
         function fetchFood(){
-            fetch(`${URL}`)
+            const res = fetch(`${URL}?query=${query}&apiKey=${API_KEY}`)
+            const data = res.json();
         }
+        fetchFood();
     },[query])
     return(
         <>
