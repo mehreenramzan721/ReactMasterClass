@@ -1,5 +1,6 @@
 import TodoItem from './TodoItem'
 import {useState} from 'react'
+import Header from './Header'
 
 export default function Todo(){
 
@@ -13,6 +14,7 @@ export default function Todo(){
     return(
         <>
         <form onSubmit={handleSubmit}>
+            <Header/>
             <input onChange={(e)=> setTodo( e.target.value)} value={todo} type="text" />
             <button type="submit">Add</button>
         </form>
