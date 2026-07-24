@@ -7,8 +7,8 @@ export default function Search(){
 
 
     useEffect(()=>{
-        function fetchFood(){
-            const res = fetch(`${URL}?query=${query}&apiKey=${API_KEY}`)
+        async function fetchFood(){
+            const res = await fetch(`${URL}?query=${query}&apiKey=${API_KEY}`)
             const data = res.json();
         }
         fetchFood();
