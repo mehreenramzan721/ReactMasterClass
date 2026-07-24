@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Todo from './components/Todo'
 import InlineComponent from './components/InlineComponent'
+import OutlineComponent from './components/OutlineComponent'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,7 +10,8 @@ function App() {
   return (
     <div className ="App">
       {/* <Todo/> */}
-      <InlineComponent/>
+      {/* <InlineComponent/> */}
+      <OutlineComponent/>
     </div>
   )
 }
