@@ -1,6 +1,11 @@
 
 
 export default function TodoItem({item}){
-    return  (<h3 >{item}</h3>)
+    return  (
+    <div className={styles.item}>
+        <h3 className={styles.itemName}>{item}</h3>
+        <hr className={styles.line}/>
+        </div>
+        )
 
 }

@@ -1,6 +1,6 @@
 import TodoItem from './TodoItem'
-import styles from '/todolist.module.css'
-export default function TodoList({todos}){
+import styles from './todolist.module.css'
+export default function Todolist({todos}){
     return(
         <>
         <div className={styles.list}>
